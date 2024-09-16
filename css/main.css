@@ -1,0 +1,47 @@
+.body {
+    background-color: #f9efdf;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+span {
+    position: relative;
+    z-index: 2;
+}
+
+span::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 1s linear;
+}
+
+span:hover::before {
+    height: 30px;
+}
+
+.btn-0{
+    width: 12%;
+    background-color: rgb(159, 15, 15);
+    border: 1px solid rgb(159, 15, 15); 
+   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
